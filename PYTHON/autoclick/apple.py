@@ -1,0 +1,23 @@
+from pyautogui import *
+import pyautogui
+import time
+import keyboard
+import random
+import win32api, win32con
+
+def Click(x,y):
+    win32api.SetCursorPos((x,y))
+    win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN,0,0)
+    win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP,0,0)
+while keyboard.is_pressed('q')==False:
+    if pyautogui.pixel(657,737)[1]<50:
+        Click(657,737) 
+        continue
+    if pyautogui.pixel(857,737)[1]<50:
+        Click(857,737)
+        continue
+    if pyautogui.pixel(1057,737)[1]<50:
+        Click(1057,737)
+        continue
+    if pyautogui.pixel(1257,737)[1]<50:
+        Click(1257,737)
