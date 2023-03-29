@@ -1,0 +1,41 @@
+@media(min-width:768px){
+    .container-1{
+        display: flex;
+        /*flex-direction: column;*/
+    }
+    
+    .container-2{
+        display: flex;
+    }
+    .container-3{
+        display: flex;
+    }
+}
+
+.container-1 div, .container-2 div, .container-3 div{
+    border: 1px;
+    padding: 10px;
+}
+
+.box-1{
+    flex: 2;
+    order: 2;
+}
+
+.box-2{
+    flex: 1;
+    order: 1;
+}
+
+.box-3{
+    flex: 1;
+    order: 3;
+}
+
+.container-2-box{
+    width: 40%;
+}
+
+.container-3-box{
+    width: 15%;
+}
